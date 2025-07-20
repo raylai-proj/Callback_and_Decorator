@@ -35,5 +35,7 @@ def callback_func():
     print(
         "\n*\nThis is a callback function which is an argument of another function.\n*\n"
     )
+
+caller(callback_func)
 ```
 
