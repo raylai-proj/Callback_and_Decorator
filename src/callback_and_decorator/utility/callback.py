@@ -13,7 +13,8 @@ def caller(callback):
     )
     callback()
     print(
-        "When these 2 factors satisfied, the function that caller accepts is a callback function."
+        "When these 2 factors satisfied, the function that caller accepts is a callback function.\n"
+        "==================================================\n"
     )
 
 
