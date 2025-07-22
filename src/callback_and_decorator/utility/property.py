@@ -13,3 +13,11 @@ class proj_progress(object):
     def __init__(self, date):
         """Initialize project progress object with deadline."""
         self._deadline = date
+
+    @property
+    def deadline(self):
+        """Get current deadline of project."""
+        try:
+            return self._deadline
+        except Exception as e:
+            print(f"Exception: {e}")
