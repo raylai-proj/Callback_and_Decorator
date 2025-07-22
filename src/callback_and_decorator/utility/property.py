@@ -26,3 +26,11 @@ class proj_progress(object):
     def deadline(self, date):
         """Set up new deadline of project."""
         self._deadline = date
+
+    @deadline.deleter
+    def deadline(self):
+        """Delete self._deadline property."""
+        try:
+            del self._deadline
+        except Exception as e:
+            print(f"Exception: {e}")
