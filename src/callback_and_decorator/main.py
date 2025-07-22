@@ -6,7 +6,7 @@ Author: Chun-Juei Lai 07/19/2025
 
 import datetime
 
-from utility import callback_func, caller, check_today, proj_progress
+from .utility import callback_func, caller, check_today, proj_progress
 
 
 def main():
