@@ -86,4 +86,10 @@ def check_today(current):
     current = current.strftime("%A %#I:%M:%S %p, %B %d, %Y")
     print(f"Today, we run the function at {current}")
 ```
+## @Property decorator:<br >
+What is @property decorator:<br >
+@property decorator is a python decorator turns a class method into a property, so you can access it like class attribute.<sub>[2]</sub><br >
+## Advantage of @property:<br >
+1. Instead of calling a method `object.method()`, you can access it like class attribute `object.method`.<sub>[2]</sub><br >
+
 
