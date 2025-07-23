@@ -91,10 +91,10 @@ today = datetime.datetime.now()
 check_today(today)
 ```
 ## @Property decorator:<br >
-What is @property decorator:<br >
-@property decorator is a python decorator turns a class method into a property, so you can access it like class attribute.<sub>[2]</sub><br >
+What is @property:<br >
+@property is a python decorator turns a class method into an attribute.<sub>[2]</sub><br >
 ## Advantage of @property:<br >
-1. Instead of calling a method `object.method()`, you can access it like class attribute `object.method`.<sub>[2]</sub><br >
+1. Access method as if it's an attribute, without parentheses. (`object.method()` become `object.method`)<sub>[2]</sub><br >
 ## @property example:<sub>[2]</sub><br >
 In addition to @property, python also provide @[function_name].setter and @[function_name].deleter to complete attribute functionalities:<br >
 ```python
