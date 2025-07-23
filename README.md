@@ -59,3 +59,31 @@ Unlike the callback function works when it is **called**, the decorator works wh
 Here is a good explanation which I found according to **catcradle5**<sub>[6]</sub>:<br >
 > A function that takes a function and returns a function. It's useful if you want something to be done before or after a function is executed and you also want to apply this to a lot of functions.<br >
 
+## Advantage of decorator compare to callback:<br >
+1. Decorator with `@[function_name]` automatically wraps the function into the new function, unlike callbacks has to manually pass into functions everytime.<br >
+2. Decorator wrap the function at **definition**, unlike callbacks wait until **calling** phase.<br >
+
+## Decorator Example<sub>[7][8][9][10]</sub>:<br >
+```python
+def decorator_func(callee):
+    """Accept callee function and decorate it with wrap_func and return new function."""
+
+    def wrap_func(*args, **kwargs):
+        """Wrap up callee to new function."""
+        first_run = datetime.datetime.strptime(FRISTRUN, "%Y-%m-%d %H:%M:%S")
+        first_run = first_run.strftime("%A %#I:%M:%S %p, %B %d, %Y")
+        print(f"The decorator_func build at {first_run}.")
+        callee(*args, **kwargs)
+        print("Funciton was wrapped up")
+
+    # The decorator_func accept callee function and return type has to be a function.
+    return wrap_func
+
+
+@decorator_func
+def check_today(current):
+    """Check today to compare to the first time the code was developed."""
+    current = current.strftime("%A %#I:%M:%S %p, %B %d, %Y")
+    print(f"Today, we run the function at {current}")
+```
+
