@@ -135,6 +135,6 @@ del new_proj.deadline
 print(f"Let's find out if deadline still exist: {new_proj.deadline}")
 ```
 ## Code Explanation:<br >
-- @property: Allow access new_proj's deadline as access attribute `print(new_proj.deadline)`<br >
-- @deadline.setter: Allow set new deadline as like change value of an attribute `new_proj.deadline = 120`<br >
-- @deadline.deleter: Allow delete a property as like delete an attribute `del new_proj.deadline`<br >
+- `@property`: Allow access new_proj's deadline as access attribute `print(new_proj.deadline)`<br >
+- `@deadline.setter`: Allow set new deadline as change value of an attribute `new_proj.deadline = 120`<br >
+- `@deadline.deleter`: Allow delete a property as delete an attribute `del new_proj.deadline`<br >
