@@ -85,6 +85,10 @@ def check_today(current):
     """Check today to compare to the first time the code was developed."""
     current = current.strftime("%A %#I:%M:%S %p, %B %d, %Y")
     print(f"Today, we run the function at {current}")
+
+# Demonstrate decorator.
+today = datetime.datetime.now()
+check_today(today)
 ```
 ## @Property decorator:<br >
 What is @property decorator:<br >
