@@ -91,5 +91,43 @@ What is @property decorator:<br >
 @property decorator is a python decorator turns a class method into a property, so you can access it like class attribute.<sub>[2]</sub><br >
 ## Advantage of @property:<br >
 1. Instead of calling a method `object.method()`, you can access it like class attribute `object.method`.<sub>[2]</sub><br >
+## @property example:<sub>[2]</sub><br >
+In addition to @property, python also provide @[function_name].setter and @[function_name].deleter to complete attribute functionalities:<br >
+```python
+class proj_progress(object):
+    """A class allows user access attribute with . using @property."""
 
+    def __init__(self, date):
+        """Initialize project progress object with deadline."""
+        self._deadline = date
+
+    @property
+    def deadline(self):
+        """Get current deadline of project."""
+        try:
+            return self._deadline
+        except Exception as e:
+            print(f"Exception: {e}")
+
+    @deadline.setter
+    def deadline(self, date):
+        """Set up new deadline of project."""
+        self._deadline = date
+
+    @deadline.deleter
+    def deadline(self):
+        """Delete self._deadline property."""
+        try:
+            del self._deadline
+        except Exception as e:
+            print(f"Exception: {e}")
+
+# Demonstrate @property.
+new_proj = proj_progress(date=90)
+print(f"new_proj deadline is {new_proj.deadline} days")
+new_proj.deadline = 120
+print(f"Updated new_proj deadline is {new_proj.deadline} days")
+del new_proj.deadline
+print(f"Let's find out if deadline still exist: {new_proj.deadline}")
+```
 
