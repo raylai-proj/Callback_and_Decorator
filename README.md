@@ -6,8 +6,9 @@ The document is referred to the following websites:<br >
 [3] Understanding CallBacks using Python — Part 2: https://medium.com/analytics-vidhya/understanding-callbacks-using-python-part-2-e71c17fed7e2<br >
 
 ## Callback:
-What is a callback function:
-A callback function is a function that I can pass as an argument into another function. A function is a callback function if it satisfies 2 factors:
+What is a callback function:<br >
+A callback function is a function that I can pass as an argument into another function. <br >
+A function is a callback function if it satisfies 2 factors:<br >
 - It is passed as an argument into another function.<sub>[1]</sub><br >
 - It is called from inside that function.<sub>[1]</sub><br >
 
