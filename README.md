@@ -55,13 +55,13 @@ A function is a decorator if it satisfies 2 conditions:<br >
 - It is applied using `@decorator_name` before a function definition.<br >
 
 ## Difference from callback:<br >
-Unlike callback functions, which run when **called**, decorators are applied at **definition** phase.<br >
+Unlike callback functions, which run when **called**, decorators are applied at **definition** time.<br >
 A good explanation from **catcradle5**<sub>[6]</sub>:<br >
 > "A function that takes a function and returns a function. It's useful if you want something to be done before or after a function is executed and you also want to apply this to a lot of functions."<br >
 
-## Advantage of decorator compare to callback:<br >
-1. Decorator with `@[function_name]` automatically wraps the function into the new function, unlike callbacks has to manually pass into functions everytime.<br >
-2. Decorator wrap the function at **definition**, unlike callbacks wait until **calling** phase.<br >
+## Advantage of decorator:<br >
+1. **Automatic wrapping**: Decorators wrap a function with behavior using `@decorator_name`, without needing to explicitly pass the function each time.<br >
+2. **Defined once, used many**: The behavior is attached at the time of function definition.
 
 ## Decorator Example<sub>[7][8][9][10]</sub>:<br >
 ```python
