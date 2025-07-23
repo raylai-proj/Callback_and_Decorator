@@ -46,4 +46,16 @@ def callback_func():
 
 caller(callback_func)
 ```
+## Decorator:
+What is a decorator:<br >
+1. A decorator is a type of callback function usage, which it accepts a function as an argument and wrap it to a new function.<sub>[4]</sub><br >
+2. In using decorator, python provides a method adding `@` with decorator's name in front of function to wrap that function to a new function.<br >
+A function is a decorator if it satisfies 2 factors:<br >
+- The function accepts another function and returns a new function.<br >
+- The function has `@[function_name]` in front of another function.<br >
+
+The difference between callback and decorator is that:<br >
+Unlike the callback function works when it is **called**, the decorator works when it is **defined**.<br >
+Here is a good explanation which I found according to **catcradle5**<sub>[6]</sub>:<br >
+> A function that takes a function and returns a function. It's useful if you want something to be done before or after a function is executed and you also want to apply this to a lot of functions.<br >
 
