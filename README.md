@@ -21,9 +21,9 @@ A function is considered a callback function if it satisfies two conditions:<br 
 
 Therefore, when I pass a function (called A) as an argument into another function (called B), and function B calles the function A in it. Then function A is a callback function.<br >
 ## Advantage of callback function:
-1. Separate the base function and custom behavior: Developers can generate customized callback functions, in the mean time, not affect the original base function. <br >
-2. The base function can remain clean and reusable.<br >
-3. Allow the base function to extend different customized behaviors.<br >
+1. **Separation of concerns**: Separate the base function and custom behavior. Developers can create customized callback functions without modifying the original base function.<br >
+2. **Reusability**: The base function can remain clean and reusable.<br >
+3. **Extensibility**: Allow the base function to extend different customized behaviors.<br >
 ## Callback Example<sub>[2]</sub>:
 ```python
 def caller(callback):
