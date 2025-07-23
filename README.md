@@ -14,8 +14,8 @@ The document is referred to the following websites:<br >
 
 ## Callback:
 What is a callback function:<br >
-A callback function is a function that I can pass as an argument into another function. <br >
-A function is a callback function if it satisfies 2 factors:<br >
+A callback function is a function that is passed as an argument to another function and is invoked inside that function.<br >
+A function is considered a callback function if it satisfies two conditions:<br >
 - It is passed as an argument into another function.<sub>[1]</sub><br >
 - It is called from inside that function.<sub>[1]</sub><br >
 
